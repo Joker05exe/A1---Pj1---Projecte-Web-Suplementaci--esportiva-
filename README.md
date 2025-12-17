@@ -44,6 +44,3 @@ Aquest document detalla com s'han assolit tots els requeriments del projecte.
 
 ## 8. Allotjament
 - El projecte està preparat per pujar-se a qualsevol hosting estàtic (GitHub Pages, Netlify, etc.) pujant la carpeta `web fitness`.
-# -A1---Pj1---Projecte-Web-Tenda-Suplementaci-
-# -A1---Pj1---Projecte-Web-Tenda-Suplements-
-# A1---Pj1---Projecte-Web-Suplementaci--esportiva-
