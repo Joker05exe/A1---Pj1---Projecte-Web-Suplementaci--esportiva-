@@ -1,0 +1,483 @@
+/* Variables globals de l'arrel */
+:root {
+    --primary: #ff4500;
+    --primary-dark: #cc3700;
+    --secondary: #1a252f;
+    --bg-light: #f8f9fa;
+    --text: #2c3e50;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --radius: 8px;
+}
+
+/* Selector universal per reiniciar marges i farcits */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estils base del cos */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estils per als encapçalaments */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--secondary);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid var(--primary);
+    display: inline-block;
+}
+
+/* Estils per als enllaços */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* Estils per a les llistes */
+ul {
+    list-style: none;
+}
+
+/* Estils per a les imatges */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Disseny i contenidors */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+main {
+    flex: 1;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Capçalera i Navegació */
+header {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.cart-link {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Components (Botons, Targetes, etc.) */
+.btn,
+.btn-large {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.card,
+article,
+.info-card,
+.cart-info-box,
+.checkout-section,
+.cart-items-section,
+#product-selector,
+form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+/* Secció Hero (Imatge principal) */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png') center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 1rem;
+    border-radius: var(--radius);
+}
+
+#hero h1 {
+    color: var(--white);
+}
+
+/* Dissenys de Quadrícula (Grid) */
+#featured,
+.product-grid,
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Formularis */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 0;
+}
+
+/* Taules */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: var(--secondary);
+    color: var(--white);
+}
+
+/* Productes */
+.product-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.product-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.product-item {
+    position: relative;
+}
+
+.product-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.product-card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid #eee;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    transition: 0.3s;
+    background: white;
+}
+
+.product-item:hover .product-card-inner {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.product-item input[type="checkbox"] {
+    display: none;
+}
+
+.product-item input:checked~.product-card-inner {
+    border-color: var(--primary);
+    background: #fff5f0;
+    position: relative;
+}
+
+.product-item input:checked~.product-card-inner::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.product-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.product-image img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary);
+    font-family: 'Oswald', sans-serif;
+}
+
+.product-desc {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+.product-price {
+    align-self: flex-start;
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Carret i Pagament */
+.cart-total-row {
+    background-color: #fff5f0;
+    font-weight: bold;
+}
+
+.order-summary {
+    background: var(--secondary);
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.total-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+/* Peu de Pàgina */
+footer {
+    background: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #aaa;
+}
+
+/* Utilitats */
+.text-center-muted {
+    text-align: center;
+    color: #666;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: #000;
+}
+
+.responsive-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    animation: fadeOut 1s 5s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Consultes de mitjans per a disseny responsiu */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

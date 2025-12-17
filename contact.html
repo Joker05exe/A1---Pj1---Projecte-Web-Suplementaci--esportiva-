@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - Suplementació Esportiva</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/unnamed.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="services.html">Productes</a></li>
+                    <li><a href="about.html">Sobre Nosaltres</a></li>
+                    <li><a href="contact.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contacta amb Nosaltres</h1>
+
+
+        <!-- REQUISIT: Formulari de contacte -->
+        <form action="#" method="post" class="contact-form-container">
+            <div class="mb-1">
+                <label for="nom">Nom:</label><br>
+                <input type="text" id="nom" name="nom" required class="form-field">
+            </div>
+
+            <div class="mb-1">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required class="form-field">
+            </div>
+
+            <div class="mb-1">
+                <label for="missatge">Missatge:</label><br>
+                <textarea id="missatge" name="missatge" rows="5" required class="form-field"></textarea>
+            </div>
+
+            <!-- REQUISIT LOPD: Checkbox de consentiment explícit -->
+            <div class="mb-1 checkbox-group">
+                <input type="checkbox" id="gdpr" name="gdpr" required>
+                <label for="gdpr">He llegit i accepto la <a href="privacy.html">política de privadesa</a>.</label>
+            </div>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+        <section>
+            <h2>Enllaços d'Interès</h2>
+            <p>Visita aquests llocs per a més informació científica:</p>
+            <!-- REQUISIT: Enllaços externs -->
+            <ul>
+                <li><a href="https://examine.com/" target="_blank">Examine.com (Base de dades de suplements)</a></li>
+                <li><a href="https://www.who.int/es" target="_blank">Organització Mundial de la Salut</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Suplementació Esportiva. Tots els drets reservats.</p>
+            <p><a href="privacy.html" class="footer-link">Política de Privadesa</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

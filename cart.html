@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carret de Compra - Suplementació Esportiva</title>
+    <meta name="description"
+        content="Revisa els teus productes seleccionats i finalitza la teva compra de suplements esportius.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/unnamed.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="container" style="position: relative;">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="services.html">Productes</a></li>
+                    <li><a href="about.html">Sobre Nosaltres</a></li>
+                    <li><a href="contact.html">Contacte</a></li>
+                </ul>
+            </nav>
+            <!-- Shopping Cart Link -->
+            <a href="cart.html" class="cart-link cart-disabled">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count">3</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h1>El Teu Carret de Compra</h1>
+
+        <section id="cart-page">
+            <!-- Cart Items Table -->
+            <div class="cart-items-section">
+                <h2>📦 Productes al Carret</h2>
+                <p class="text-center-muted">Exemple de productes seleccionats</p>
+
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Producte</th>
+                            <th>Descripció</th>
+                            <th>Preu Unitari</th>
+                            <th>Quantitat</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Whey Isolate</strong></td>
+                            <td>Proteïna d'alta qualitat amb 90% de pureza</td>
+                            <td>39,99€</td>
+                            <td>1</td>
+                            <td><strong>39,99€</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Creatina Monohidrat</strong></td>
+                            <td>La forma més estudiada i efectiva</td>
+                            <td>19,99€</td>
+                            <td>2</td>
+                            <td><strong>39,98€</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pre-Workout Intense</strong></td>
+                            <td>Màxima energia amb cafeïna i beta-alanina</td>
+                            <td>34,99€</td>
+                            <td>1</td>
+                            <td><strong>34,99€</strong></td>
+                        </tr>
+                        <tr class="cart-total-row">
+                            <td colspan="4" class="text-right"><strong>TOTAL:</strong></td>
+                            <td><strong class="total-amount">114,96€</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Checkout Form -->
+            <div class="checkout-section">
+                <h2>💳 Finalitzar Compra</h2>
+                <p class="text-center-muted">Completa les teves dades per processar
+                    la comanda</p>
+
+                <form class="checkout-form" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom-complet">Nom Complet *</label>
+                            <input type="text" id="nom-complet" name="nom-complet" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-checkout">Email *</label>
+                            <input type="email" id="email-checkout" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefon">Telèfon *</label>
+                            <input type="tel" id="telefon" name="telefon" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="codi-postal">Codi Postal *</label>
+                            <input type="text" id="codi-postal" name="codi-postal" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adreca">Adreça de Lliurament *</label>
+                        <input type="text" id="adreca" name="adreca" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ciutat">Ciutat *</label>
+                        <input type="text" id="ciutat" name="ciutat" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="metode-pagament">Mètode de Pagament *</label>
+                        <select id="metode-pagament" name="metode-pagament" required>
+                            <option value="">Selecciona un mètode...</option>
+                            <option value="targeta">Targeta de Crèdit/Dèbit</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="transferencia">Transferència Bancària</option>
+                            <option value="contrareemborsament">Contrareemborsament</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentaris">Comentaris Addicionals (Opcional)</label>
+                        <textarea id="comentaris" name="comentaris" rows="4"
+                            placeholder="Instruccions especials de lliurament, preferències, etc."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="termes" name="termes" required>
+                        <label for="termes">Accepto els <a href="privacy.html">termes i condicions</a> i la política de
+                            privadesa *</label>
+                    </div>
+
+                    <div class="order-summary">
+                        <h3>Resum de la Comanda</h3>
+                        <div class="summary-line">
+                            <span>Subtotal (3 productes):</span>
+                            <span>114,96€</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Enviament:</span>
+                            <span>Gratuït</span>
+                        </div>
+                        <div class="summary-line total-line">
+                            <span><strong>TOTAL:</strong></span>
+                            <span><strong>114,96€</strong></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-large">Confirmar Comanda</button>
+                </form>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="cart-info-box">
+                <h2>💡 Informació Important</h2>
+
+                <div class="info-section">
+                    <h3>📝 Com Funciona:</h3>
+                    <ol>
+                        <li>Revisa els productes al teu carret a la taula superior</li>
+                        <li>Completa el formulari amb les teves dades de lliurament</li>
+                        <li>Selecciona el teu mètode de pagament preferit</li>
+                        <li>Confirma la comanda i rebràs un email de confirmació</li>
+                    </ol>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>🚚 Enviament Gratuït</h3>
+                        <p>En comandes superiors a 50€</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🔒 Pagament Segur</h3>
+                        <p>Transaccions 100% segures</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>↩️ Devolucions</h3>
+                        <p>30 dies per retornar</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📞 Suport 24/7</h3>
+                        <p>Estem aquí per ajudar-te</p>
+                    </div>
+                </div>
+
+                <div class="note-box">
+                    <p><strong>📌 Nota:</strong> Aquesta és una pàgina de demostració educativa. Els productes mostrats
+                        són exemples i el formulari no processa comandes reals.</p>
+                </div>
+            </div>
+
+            <div class="back-to-shop">
+                <a href="services.html" class="btn btn-large">← Continuar Comprant</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Suplementació Esportiva. Tots els drets reservats.</p>
+            <p><a href="privacy.html" class="footer-link">Política de Privadesa</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <!-- METADADES: Definició de metadades per a SEO i autoria -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive Viewport -->
+    <meta name="description"
+        content="Botiga líder en suplementació esportiva. Proteïnes, creatina i més per al teu rendiment.">
+    <meta name="keywords" content="suplementació, esport, proteïna, creatina, gimnàs, fitness">
+    <meta name="author" content="Web Fitness Team">
+    <title>Inici - Suplementació Esportiva</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Vinculació full d'estils -->
+
+    <!--Favicon-->
+    <link rel="icon" href="images/unnamed.jpg" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ESTRUCTURA HTML5: Ús de l'etiqueta header per a la capçalera -->
+    <header>
+        <div class="container">
+            <!-- MENÚ DE NAVEGACIÓ: Menú principal amb enllaços a totes les pàgines -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="services.html">Productes</a></li>
+                    <li><a href="about.html">Sobre Nosaltres</a></li>
+                    <li><a href="contact.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ESTRUCTURA HTML5: Ús de section per a seccions temàtiques -->
+        <section id="hero">
+            <h1>Potencia el teu Rendiment</h1>
+            <p>La millor selecció de suplements esportius per a atletes exigents.</p>
+            <a href="services.html" class="btn">Veure Productes</a>
+        </section>
+
+        <section id="featured">
+            <h2>Productes Destacats</h2>
+            <!-- ESTRUCTURA HTML5: Ús de article per a contingut independent -->
+            <a href="services.html" class="product-card-link">
+                <article>
+                    <h3>Proteïna Whey Isolate</h3>
+                    <p>Màxima puresa per a la recuperació muscular.</p>
+                </article>
+            </a>
+            <a href="services.html" class="product-card-link">
+                <article>
+                    <h3>Creatina Monohidrat</h3>
+                    <p>Augmenta la teva força i potència explosiva.</p>
+                </article>
+            </a>
+        </section>
+
+        <section id="video-section">
+            <h2>Com triar el teu suplement?</h2>
+            <!-- REQUISIT: Inclusió d'un vídeo -->
+            <div class="video-wrapper">
+                <video controls preload="metadata" class="responsive-video">
+                    <source src="video/video.mp4" type="video/mp4">
+                    El teu navegador no suporta la reproducció de vídeos.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- SEMÀNTICA: Dades estructurades Schema.org per a botiga -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Suplementació Esportiva",
+  "image": "images/hero.png",
+  "description": "Botiga líder en suplementació esportiva. Proteïnes, creatina i més.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Carrer de l'Esport 123",
+    "addressLocality": "Barcelona",
+    "postalCode": "08001",
+    "addressCountry": "ES"
+  },
+  "priceRange": "$$"
+}
+</script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Suplementació Esportiva. Tots els drets reservats.</p>
+            <p><a href="privacy.html" class="footer-link">Política de Privadesa</a></p>
+        </div>
+    </footer>
+
+    <!-- LOPD: Avís de galetes (Cookies) -->
+    <div id="cookie-banner">
+        <p>Aquest lloc web utilitza galetes per millorar la teva experiència. <a href="privacy.html"
+                class="cookie-link">Més informació</a></p>
+    </div>
+
+</body>
+
+</html>

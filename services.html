@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productes - Suplementació Esportiva</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/unnamed.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="container relative">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="services.html">Productes</a></li>
+                    <li><a href="about.html">Sobre Nosaltres</a></li>
+                    <li><a href="contact.html">Contacte</a></li>
+                </ul>
+            </nav>
+            <!-- Shopping Cart Link -->
+            <a href="cart.html" id="shopping-cart" class="cart-link">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Els Nostres Productes</h1>
+        <p>Descobreix la nostra gamma de suplements d'alta qualitat.</p>
+
+        <section>
+            <h2>Taula Nutricional Comparativa</h2>
+            <!-- REQUISIT: Taula amb colspan i rowspan -->
+            <table class="full-width-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Producte</th> <!-- rowspan utilitzat -->
+                        <th colspan="3">Valors per 100g</th> <!-- colspan utilitzat -->
+                    </tr>
+                    <tr>
+                        <th>Proteïna</th>
+                        <th>Carbohidrats</th>
+                        <th>Greixos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Whey Isolate</td>
+                        <td>90g</td>
+                        <td>2g</td>
+                        <td>1g</td>
+                    </tr>
+                    <tr>
+                        <td>Caseïna Micel·lar</td>
+                        <td>80g</td>
+                        <td>4g</td>
+                        <td>2g</td>
+                    </tr>
+                    <tr>
+                        <td>Mass Gainer</td>
+                        <td>20g</td>
+                        <td>70g</td>
+                        <td>5g</td>
+                    </tr>
+                    <tr>
+                        <td>Creatina Monohidrat</td>
+                        <td>0g</td>
+                        <td>0g</td>
+                        <td>0g</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Llistat de Categories</h2>
+            <!-- REQUISIT: Llista amb subllista -->
+            <ul>
+                <li>Proteïnes
+                    <ul>
+                        <li>Sèrum de llet (Whey)</li>
+                        <li>Vegana</li>
+                        <li>Caseïna</li>
+                    </ul>
+                </li>
+                <li>Rendiment
+                    <ul>
+                        <li>Creatina</li>
+                        <li>Beta-Alanina</li>
+                        <li>Citrulina</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="product-selector">
+            <h2>Selecciona Els Teus Productes</h2>
+            <p>Tria els suplements que necessites per al teu objectiu d'entrenament.</p>
+
+            <div class="product-categories">
+                <!-- Proteïnes -->
+                <div class="product-category">
+                    <h3>Proteïnes</h3>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <input type="checkbox" id="whey-isolate" name="product" value="Whey Isolate">
+                            <label for="whey-isolate" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/whey_protein.png" alt="Whey Isolate">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Whey Isolate</h4>
+                                    <p class="product-desc">Proteïna d'alta qualitat amb 90% de pureza</p>
+                                    <span class="product-price">39,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="whey-concentrate" name="product" value="Whey Concentrate">
+                            <label for="whey-concentrate" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/whey_protein.png" alt="Whey Concentrate">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Whey Concentrate</h4>
+                                    <p class="product-desc">Proteïna de sèrum amb 80% de pureza</p>
+                                    <span class="product-price">29,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="casein" name="product" value="Caseïna">
+                            <label for="casein" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/whey_protein.png" alt="Caseïna Micel·lar">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Caseïna Micel·lar</h4>
+                                    <p class="product-desc">Proteïna d'absorció lenta ideal per la nit</p>
+                                    <span class="product-price">34,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="vegan-protein" name="product" value="Proteïna Vegana">
+                            <label for="vegan-protein" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/whey_protein.png" alt="Proteïna Vegana">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Proteïna Vegana</h4>
+                                    <p class="product-desc">Blend de proteïnes vegetals</p>
+                                    <span class="product-price">32,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creatina -->
+                <div class="product-category">
+                    <h3>Creatina</h3>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <input type="checkbox" id="creatine-mono" name="product" value="Creatina Monohidrat">
+                            <label for="creatine-mono" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="Creatina Monohidrat">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Creatina Monohidrat</h4>
+                                    <p class="product-desc">La forma més estudiada i efectiva</p>
+                                    <span class="product-price">19,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="creatine-hcl" name="product" value="Creatina HCL">
+                            <label for="creatine-hcl" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="Creatina HCL">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Creatina HCL</h4>
+                                    <p class="product-desc">Millor absorció, sense càrrega</p>
+                                    <span class="product-price">24,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mass Gainers -->
+                <div class="product-category">
+                    <h3>Mass Gainers</h3>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <input type="checkbox" id="mass-gainer-extreme" name="product" value="Mass Gainer Extreme">
+                            <label for="mass-gainer-extreme" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/whey_protein.png" alt="Mass Gainer Extreme">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Mass Gainer Extreme</h4>
+                                    <p class="product-desc">1000 cal per servei amb proteïnes i carbohidrats</p>
+                                    <span class="product-price">49,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="lean-gainer" name="product" value="Lean Mass Gainer">
+                            <label for="lean-gainer" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/whey_protein.png" alt="Lean Mass Gainer">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Lean Mass Gainer</h4>
+                                    <p class="product-desc">Fórmula baixa en sucres per a volum net</p>
+                                    <span class="product-price">44,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pre-Workout -->
+                <div class="product-category">
+                    <h3>Pre-Workout</h3>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <input type="checkbox" id="preworkout-intense" name="product" value="Pre-Workout Intense">
+                            <label for="preworkout-intense" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="Pre-Workout Intense">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Pre-Workout Intense</h4>
+                                    <p class="product-desc">Màxima energia amb cafeïna i beta-alanina</p>
+                                    <span class="product-price">34,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="preworkout-pump" name="product" value="Pre-Workout Pump">
+                            <label for="preworkout-pump" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="Pre-Workout Pump">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Pre-Workout Pump</h4>
+                                    <p class="product-desc">Sense estimulants, màxim bomb muscular</p>
+                                    <span class="product-price">29,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aminoàcids -->
+                <div class="product-category">
+                    <h3>Aminoàcids</h3>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <input type="checkbox" id="bcaa" name="product" value="BCAA 2:1:1">
+                            <label for="bcaa" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="BCAA 2:1:1">
+                                </div>
+                                <div class="product-content">
+                                    <h4>BCAA 2:1:1</h4>
+                                    <p class="product-desc">Leucina, isoleucina i valina</p>
+                                    <span class="product-price">24,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="eaa" name="product" value="EAA Complex">
+                            <label for="eaa" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="EAA Complex">
+                                </div>
+                                <div class="product-content">
+                                    <h4>EAA Complex</h4>
+                                    <p class="product-desc">Tots els aminoàcids essencials</p>
+                                    <span class="product-price">29,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="glutamine" name="product" value="Glutamina">
+                            <label for="glutamine" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="Glutamina">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Glutamina</h4>
+                                    <p class="product-desc">Suport per a la recuperació muscular</p>
+                                    <span class="product-price">19,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vitamines i Minerals -->
+                <div class="product-category">
+                    <h3>Vitamines i Minerals</h3>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <input type="checkbox" id="multivitamin" name="product" value="Multivitamínic">
+                            <label for="multivitamin" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="Multivitamínic">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Multivitamínic Premium</h4>
+                                    <p class="product-desc">Cobertura completa de micronutrients</p>
+                                    <span class="product-price">22,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="omega3" name="product" value="Omega-3">
+                            <label for="omega3" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="Omega-3">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Omega-3</h4>
+                                    <p class="product-desc">Àcids grassos essencials EPA i DHA</p>
+                                    <span class="product-price">16,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <input type="checkbox" id="vitamin-d" name="product" value="Vitamina D3">
+                            <label for="vitamin-d" class="product-card-overlay"></label>
+                            <div class="product-card-inner">
+                                <div class="product-image">
+                                    <img src="images/products/preworkout.png" alt="Vitamina D3">
+                                </div>
+                                <div class="product-content">
+                                    <h4>Vitamina D3</h4>
+                                    <p class="product-desc">Suport per al sistema immunitari</p>
+                                    <span class="product-price">12,99€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Section -->
+            <div id="selection-summary">
+                <h3>Resum de la Teva Selecció</h3>
+                <p class="text-center-muted">Selecciona els productes de dalt marcant les caselles. Els
+                    productes seleccionats apareixeran destacats amb un fons de color taronja.</p>
+                <div class="summary-info">
+                    <p><strong>Com utilitzar aquesta pàgina:</strong></p>
+                    <ol>
+                        <li>Fes clic en les tarjetes de producte per seleccionar-los</li>
+                        <li>Veuràs un efecte visual quan seleccionis un producte</li>
+                        <li>Pots fer clic al carret 🛒 a dalt per veure instruccions</li>
+                        <li>Els preus estan indicats en cada producte</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Suplementació Esportiva. Tots els drets reservats.</p>
+            <p><a href="privacy.html" class="footer-link">Política de Privadesa</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
